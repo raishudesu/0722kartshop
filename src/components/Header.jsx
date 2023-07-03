@@ -8,7 +8,7 @@ const Header = () => {
   };
   return (
     <div className="w-full sticky top-0">
-      <div className="flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-gray-500 bg-white font-semibold">
+      <div className="flex justify-between md:justify-evenly items-center h-20 w-full mx-auto px-4 text-gray-500 bg-white font-semibold">
         <h1 className="text-5xl font-bubblegum text-[#D77FA1]">kart.</h1>
         <div className="hidden md:flex w-[768px] justify-between items-center p-2">
           <div>
