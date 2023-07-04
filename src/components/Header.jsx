@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-scroll';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -7,9 +8,11 @@ const Header = () => {
     setNav(!nav);
   };
   return (
-    <div className="w-full sticky top-0">
+    <div className="w-full sticky top-0 z-10">
       <div className="flex justify-between md:justify-evenly items-center h-20 w-full mx-auto px-4 text-gray-500 bg-white font-semibold">
-        <h1 className="text-5xl font-bubblegum text-[#D77FA1]">kart.</h1>
+        <Link
+          to="top" spy={true} smooth={true} duration={500} 
+          className="text-5xl font-bubblegum text-[#D77FA1] cursor-pointer">kart.</Link>
         <div className="hidden md:flex w-[768px] justify-between items-center p-2">
           <div>
             <div className="">

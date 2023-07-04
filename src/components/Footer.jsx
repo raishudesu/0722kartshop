@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center max-h-fit w-full mx-auto px-4 text-black bg-gray-100 text-xs">
+    <div className="mb-auto flex flex-col justify-center items-center max-h-fit w-full px-4 text-black bg-gray-100 text-xs">
       <div className="w-[100%] flex justify-center p-5 md:w-[70%] whitespace-nowrap overflow-x-scroll sm:overflow-hidden">
         <ul className="flex w-full sm:justify-center">
           <li className="font-semibold mx-2">Privacy Policy</li>

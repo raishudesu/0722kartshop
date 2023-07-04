@@ -4,6 +4,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/4d11e76df0007e851de705a70c936944.png?q=95&w=320",
         "merchName": "NewJeans 2nd EP 'Get Up' Bunny Beach Bag ver. (Set)",
+        "category": "Get Up",
         "price": "$111.48",
         "status": "Pre-order"
       },
@@ -12,6 +13,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/82626250f824e4d047166786310a8393.png?q=95&w=320",
         "merchName": "NewJeans 2nd EP 'Get Up' Bunny Beach Bag ver. (Random)",
+        "category": "Get Up",
         "price": "$18.58",
         "status": "Pre-order"
       },
@@ -20,6 +22,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/0a3506d263549998bc237e5f26e99597.png?q=95&w=320",
         "merchName": "NewJeans 2nd EP 'Get Up' THE POWERPUFF GIRLS X NJ Box ver. (Random)",
+        "category": "Get Up",
         "price": "$17.18",
         "status": "Pre-order"
       },
@@ -28,6 +31,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/c35ba933a64f7726984709aea21d075d.png?q=95&w=320",
         "merchName": "NewJeans 2nd EP 'Get Up' Weverse Albums ver. (Set)",
+        "category": "Get Up",
         "price": "$30.37",
         "status": "Pre-order"
       },
@@ -36,6 +40,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/d986c27ae0b57d57abdc706a0bc81311.png?q=95&w=320",
         "merchName": "NewJeans 2nd EP 'Get Up' Weverse Albums ver. (Random)",
+        "category": "Get Up",
         "price": "$10.12",
         "status": "Pre-order"
       },
@@ -44,6 +49,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/805beb69854a55c9d303b738c38c0b33.png?q=95&w=320",
         "merchName": "NewJeans ‘OMG’ Message Card ver. (Set)",
+        "category": "OMG",
         "price": "$82.49",
         "status": "Pre-order"
       },
@@ -52,6 +58,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/fec0d5a35b3d73bd1abbd0368e9d8268.png?q=95&w=320",
         "merchName": "NewJeans ‘OMG’ Message Card ver. (Random)",
+        "category": "OMG",
         "price": "$13.74",
         "status": "Pre-order"
       },
@@ -60,6 +67,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/13b8bc23633f83d9638d2ff0c4875d26.png?q=95&w=320",
         "merchName": "NewJeans ‘OMG’ Weverse Albums ver.",
+        "category": "OMG",
         "price": "$10.12",
         "status": "Pre-order"
       },
@@ -68,6 +76,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/b6096db086ffc1f815a0a07e3a1ad845.png?q=95&w=320",
         "merchName": "NewJeans 1st EP 'New Jeans' Bluebook ver. (Set)",
+        "category": "New Jeans",
         "price": "$104.79",
         "status": "Pre-order"
       },
@@ -75,7 +84,8 @@
         "merchId": 9,
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/af01b408905514b485fe18e47b19b095.png?q=95&w=320",
-        "merchName": "NewJeans 1st EP 'New Jeans' Bluebook ver. (Random)    ",
+        "merchName": "NewJeans 1st EP 'New Jeans' Bluebook ver. (Random)",
+        "category": "New Jeans",
         "price": "$17.46",
         "status": "Pre-order"
       },
@@ -84,6 +94,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/9912453e36490a90474afaf1f6e38606.png?q=95&w=320",
         "merchName": "NewJeans 1st EP 'New Jeans' Weverse Albums ver.",
+        "category": "New Jeans",
         "price": "$10.12",
         "status": "Pre-order"
       },
@@ -92,6 +103,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/6c7670b7efedcf95fb2fb3183df03aeb.png?q=95&w=320",
         "merchName": "NewJeans 1st EP 'New Jeans' Bag (Red) ver. (LIMITED)",
+        "category": "New Jeans",
         "price": "$20.90",
         "status": "Pre-order"
       },
@@ -100,6 +112,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/fffd2df89e9988cc4782167809ee1161.png?q=95&w=320",
         "merchName": "NewJeans 1st EP 'New Jeans' Bag (Black) ver. (LIMITED)",
+        "category": "New Jeans",
         "price": "$20.90",
         "status": "Pre-order"
       },
@@ -108,6 +121,7 @@
         "imageUrl":
           "https://cdn-contents.weverseshop.io/public/shop/3d97f046d9e633e20def38ac7c98eb87.png?q=95&w=320",
         "merchName": "NewJeans 1st EP 'New Jeans' Bag (White) ver. (LIMITED)",
+        "category": "New Jeans",
         "price": "$20.90",
         "status": "Pre-order"
       }

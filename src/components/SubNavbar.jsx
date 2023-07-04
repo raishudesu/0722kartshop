@@ -1,23 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 
-const SubNavbar = () => {
+const SubNavbar = ({ handleCategoryClick }) => {
+  //BUTTON FOCUS FOR PAGE FILTERING
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleClick = (category) => {
+    setActiveButton(category);
+    handleCategoryClick(category);
+  };
   return (
     <div className="w-full">
       <div className="flex justify-center items-center h-16 w-full mx-auto px-4 text-gray-500 bg-gray-100">
         <div className="w-full flex justify-center">
           <ul className="flex gap-5">
-            <a href="" className="bg-gray-300 p-2 rounded">
+            <button
+              className={`${
+                activeButton === null ? "bg-gray-300" : ""
+              } p-2 rounded`}
+              onClick={() => handleClick(null)}
+            >
               All
-            </a>
-            <a href="" className="p-2 rounded">
+            </button>
+            <button
+              className={`${
+                activeButton === "Get Up" ? "bg-gray-300" : ""
+              } p-2 rounded`}
+              onClick={() => handleClick("Get Up")}
+            >
               Get Up
-            </a>
-            <a href="" className="p-2 rounded">
+            </button>
+            <button
+              className={`${
+                activeButton === "OMG" ? "bg-gray-300" : ""
+              } p-2 rounded`}
+              onClick={() => handleClick("OMG")}
+            >
               OMG
-            </a>
-            <a href="" className="p-2 rounded">
+            </button>
+            <button
+              className={`${
+                activeButton === "New Jeans" ? "bg-gray-300" : ""
+              } p-2 rounded`}
+              onClick={() => handleClick("New Jeans")}
+            >
               New Jeans
-            </a>
+            </button>
           </ul>
         </div>
       </div>
