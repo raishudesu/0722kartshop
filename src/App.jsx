@@ -11,7 +11,7 @@ import './App.css'
 function App() {
 
   return (
-    <div id='top' className='font-raleway'>
+    <div id='top' className='font-poppins'>
       <BrowserRouter>
         <Header />
         <Navbar />

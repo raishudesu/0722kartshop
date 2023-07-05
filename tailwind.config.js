@@ -9,7 +9,8 @@ export default {
       fontFamily: {
         bubblegum: ['Bubblegum Sans'],
         raleway: ['Raleway'],
-        roboto: ['Roboto']
+        roboto: ['Roboto'],
+        poppins: ['Poppins']
       }
     },
   },
