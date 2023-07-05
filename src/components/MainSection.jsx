@@ -3,8 +3,15 @@ import { useAnimate, usePresence } from "framer-motion";
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 import Merch from "../assets/merch.json";
 import SubNavbar from "./SubNavbar";
+import { Link, useNavigate } from 'react-router-dom'
 
 const MainSection = () => {
+  //NAVIGATE TO PRODUCT PAGE WHEN ITEM IS SELECTED
+  const navigate = useNavigate();
+
+  const onItemClick = (item) => {
+    navigate('/productpage', { state: { item } });
+  };
   //HIDING SOLD OUT MERCH
   const [soldOut, setSoldOut] = useState(false);
   const hideSoldOUt = () => {
@@ -98,7 +105,7 @@ const MainSection = () => {
           {renderMerch.map(({ imageUrl, merchName, price, status }, index) => {
             return (
               <li
-                key={index}
+                key={index} onClick={() => onItemClick({ imageUrl, merchName, price, status })}
                 className="max-w-[200px] flex flex-col gap-3 transition ease-in-out duration-300 hover:scale-105"
               >
                 <a href="">
