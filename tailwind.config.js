@@ -7,10 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bubblegum: ['Bubblegum Sans'],
-        raleway: ['Raleway'],
-        roboto: ['Roboto'],
-        poppins: ['Poppins']
+        bubblegum: ['Bubblegum Sans', 'cursive'],
+        raleway: ['Raleway', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
       }
     },
   },
