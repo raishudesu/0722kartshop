@@ -7,6 +7,7 @@ const Header = () => {
   const handleNav = () => {
     setNav(!nav);
   };
+
   return (
     <div className="w-full sticky top-0 z-10">
       <div className="flex justify-between md:justify-evenly items-center h-20 w-full mx-auto px-4 text-gray-500 bg-white font-semibold">
