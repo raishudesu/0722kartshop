@@ -105,7 +105,7 @@
         "merchName": "NewJeans 1st EP 'New Jeans' Bag (Red) ver. (LIMITED)",
         "category": "New Jeans",
         "price": "$20.90",
-        "status": "Pre-order"
+        "status": "Sold Out"
       },
       {
         "merchId": 12,
@@ -114,7 +114,7 @@
         "merchName": "NewJeans 1st EP 'New Jeans' Bag (Black) ver. (LIMITED)",
         "category": "New Jeans",
         "price": "$20.90",
-        "status": "Pre-order"
+        "status": "Sold Out"
       },
       {
         "merchId": 13,
@@ -123,6 +123,6 @@
         "merchName": "NewJeans 1st EP 'New Jeans' Bag (White) ver. (LIMITED)",
         "category": "New Jeans",
         "price": "$20.90",
-        "status": "Pre-order"
+        "status": "Sold Out"
       }
 ]

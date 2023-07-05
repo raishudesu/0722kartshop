@@ -1,21 +1,64 @@
 import React, { useState, useEffect } from "react";
 import { useAnimate, usePresence } from "framer-motion";
-import { AiOutlineCheckCircle } from "react-icons/ai";
+import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 import Merch from "../assets/merch.json";
 import SubNavbar from "./SubNavbar";
 
 const MainSection = () => {
+  //HIDING SOLD OUT MERCH
+  const [soldOut, setSoldOut] = useState(false);
+  const hideSoldOUt = () => {
+    setSoldOut(true);
+  };
+  const showSoldOUt = () => {
+    setSoldOut(false);
+  };
+
+  const showHideSoldOutBtn = () => {
+    return (
+      <button
+        onClick={hideSoldOUt}
+        className="md:mx-16 flex items-center gap-1"
+      >
+        <AiOutlineCloseCircle size={20} />
+        Hide sold out
+      </button>
+    );
+  };
+
+  const closeHideSoldOutBtn = () => {
+    return (
+      <button
+        onClick={showSoldOUt}
+        className="md:mx-16 flex items-center gap-1"
+      >
+        <AiOutlineCheckCircle size={20} />
+        Show sold out
+      </button>
+    );
+  };
+
   //FILTERING THE DATA BY CATEGORY
   const [defaultFilter, setFilter] = useState(null);
 
   const filterByCategory = () => {
+    if (soldOut)
+      return Merch.filter(
+        (item) => item.category === defaultFilter && item.status !== "Sold Out"
+      );
     return Merch.filter((item) => item.category === defaultFilter);
+  };
+  
+  //SHOW ALL DATA
+  const showAll = () => {
+    if (soldOut) return Merch.filter((item) => item.status !== "Sold Out");
+    return Merch;
   };
 
   const handleCategoryClick = (category) => {
     setFilter(category);
   };
-  const renderMerch = defaultFilter ? filterByCategory() : Merch;
+  const renderMerch = defaultFilter ? filterByCategory() : showAll();
 
   //ANIMATION
   const [isPresent, safeToRemove] = usePresence();
@@ -41,17 +84,14 @@ const MainSection = () => {
   return (
     <div
       ref={scope}
-      className="flex flex-col min-h-screen max-h-fit max-w-[1240px] mx-auto text-black bg-white"
+      className="w-full flex flex-col min-h-screen max-h-fit mx-auto text-black bg-white"
     >
       <SubNavbar handleCategoryClick={handleCategoryClick} />
-      <div className="flex justify-between w-full p-4">
+      <div className="flex self-center justify-between w-full p-4 max-w-[1240px]">
         <h1 className="md:mx-16">
           <span className="font-semibold">{renderMerch.length} </span>items
         </h1>
-        <h1 className="md:mx-16 flex items-center gap-1">
-          <AiOutlineCheckCircle size={20} />
-          Hide sold out
-        </h1>
+        {!soldOut ? showHideSoldOutBtn() : closeHideSoldOutBtn()}
       </div>
       <div className="flex justify-center p-2 md:p-4">
         <ul className="grid grid-cols-2 gap-5 sm:grid-cols-4 md:grid-cols-5">

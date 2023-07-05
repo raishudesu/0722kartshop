@@ -9,8 +9,8 @@ const SubNavbar = ({ handleCategoryClick }) => {
     handleCategoryClick(category);
   };
   return (
-    <div className="w-full">
-      <div className="flex justify-center items-center h-16 w-full mx-auto px-4 text-gray-500 bg-gray-100">
+    <div className="w-full bg-gray-100">
+      <div className="flex justify-center items-center h-16 w-full mx-auto px-4 text-gray-500">
         <div className="w-full flex justify-center">
           <ul className="flex gap-5">
             <button
