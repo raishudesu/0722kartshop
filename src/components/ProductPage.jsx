@@ -29,7 +29,7 @@ function ProductPage() {
         <img src={imageUrl} alt="/" className="w-full md:w-[40%] lg:w-[30%]" />
         <div className="flex flex-col justify-center items-center w-full md:w-[30%] max-h-fit">
           <div className="p-2 flex flex-col gap-3 w-full">
-            <h6 className="text-sm font-semibold md:text-2xl">{status}</h6>
+            <h1 className="text-md md:text-2xl font-black">{status}</h1>
             <h4 className="text-md md:text-2xl">{merchName}</h4>
             <h6 className="font-semibold md:text-2xl">{price}</h6>
           </div>

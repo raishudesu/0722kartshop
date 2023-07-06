@@ -11,7 +11,7 @@ import './App.css'
 function App() {
 
   return (
-    <div id='top' className='font-poppins'>
+    <div id='top' className='font-inter'>
       <BrowserRouter>
         <Header />
         <Navbar />

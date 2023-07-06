@@ -112,9 +112,9 @@ const MainSection = () => {
                   <img src={imageUrl} alt="" />
                 </a>
                 <div className="flex flex-col justify-start gap-2 p-2">
-                  <h6 className="uppercase text-xs font-bold">{status}</h6>
-                  <h4 className="text-sm">{merchName}</h4>
-                  <h6 className="font-bold">{price}</h6>
+                  <h6 className="uppercase text-sm font-bold">{status}</h6>
+                  <h4 className="text-sm font-normal">{merchName}</h4>
+                  <h6 className="text-sm font-semibold">{price}</h6>
                 </div>
               </li>
             );

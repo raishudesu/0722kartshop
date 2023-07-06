@@ -8,8 +8,7 @@ export default {
     extend: {
       fontFamily: {
         bubblegum: ['Bubblegum Sans', 'cursive'],
-        raleway: ['Raleway', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif']
+        inter: ['Inter', 'sans-serif']
       }
     },
   },
