@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    /* Custom CSS for scrollbar with consistent color */
+    .scrollbar-colored::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    .scrollbar-colored::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    .scrollbar-colored::-webkit-scrollbar-thumb {
+      transition: ease-in-out;
+      background-color: white;
+      border-radius: 9999px;
+    }
+    .scrollbar-colored::-webkit-scrollbar-thumb:hover{
+      background-color: gray;
+    }
+
+    .scrollbar-colored::-webkit-scrollbar-thumb:hover {
+      
+    }
+  }
+}
+/* Custom CSS for scrollbar radius */

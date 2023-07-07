@@ -1,28 +1,25 @@
-import React from 'react'
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
-import Header from './components/Header'
-import Navbar from './components/Navbar'
-import MainSection from './components/MainSection'
-import ProductPage from './components/ProductPage'
-import Footer from './components/Footer'
-import './App.css'
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainSection from "./components/MainSection";
+import ProductPage from "./components/ProductPage";
+import AdminLogin from "./components/AdminLogin";
+import MainPage from "./pages/MainPage";
+import "./App.css";
 
 function App() {
-
   return (
-    <div id='top' className='font-inter'>
-      <BrowserRouter>
-        <Header />
-        <Navbar />
+    <BrowserRouter>
+      <div id="top" className="font-sans">
         <Routes>
-          <Route path='/' element={<MainSection />}/>
-          <Route path='/productpage' element={<ProductPage />} />
+          <Route element={<MainPage />}>
+            <Route path="/" element={<MainSection />}/>
+            <Route path="/productpage" element={<ProductPage />}/>
+          </Route>
+          <Route path="/adminlogin" element={<AdminLogin />} />
         </Routes>
-      </BrowserRouter>
-      <Footer />
-    </div>
-  )
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

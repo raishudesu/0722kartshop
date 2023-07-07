@@ -3,7 +3,7 @@ import { useAnimate, usePresence } from "framer-motion";
 import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 import Merch from "../assets/merch.json";
 import SubNavbar from "./SubNavbar";
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const MainSection = () => {
   //NAVIGATE TO PRODUCT PAGE WHEN ITEM IS SELECTED
@@ -111,9 +111,9 @@ const MainSection = () => {
                 <a href="">
                   <img src={imageUrl} alt="" />
                 </a>
-                <div className="flex flex-col justify-start gap-2 p-2">
+                <div className="flex flex-col justify-start gap-2 p-2 md:p-1">
                   <h6 className="uppercase text-sm font-bold">{status}</h6>
-                  <h4 className="text-sm font-normal">{merchName}</h4>
+                  <h4 className="text-sm font-normal text-[#71717A]">{merchName}</h4>
                   <h6 className="text-sm font-semibold">{price}</h6>
                 </div>
               </li>
