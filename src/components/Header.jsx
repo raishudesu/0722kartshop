@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -11,7 +11,17 @@ const Header = () => {
   const closeNav = () => {
     setNav(false)
   }
-
+  useEffect(() => {
+    const handleResize = () => {
+      const innerWidth = window.innerWidth;
+      if (innerWidth >= 768) {
+        closeNav();
+        return
+      }
+    };
+    // Attach event listener on component mount
+    window.addEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="w-full sticky top-0 z-10">
       <div className="flex justify-between md:justify-center items-center h-20 w-full mx-auto px-4 text-[#71717A] bg-white font-semibold">
