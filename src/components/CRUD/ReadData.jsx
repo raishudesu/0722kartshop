@@ -16,7 +16,7 @@ const ReadData = () => {
   useEffect(() => {
     const kartCollectionRef = collection(db, "kart");
     const q = query(kartCollectionRef, orderBy("addedAt"));
-  
+
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const filteredData = snapshot.docs.map((doc) => ({
         ...doc.data(),
@@ -24,7 +24,7 @@ const ReadData = () => {
       }));
       setDataList(filteredData);
     });
-  
+
     return () => {
       unsubscribe();
     };
@@ -73,7 +73,6 @@ const ReadData = () => {
       );
     return dataList.filter((item) => item.category === defaultFilter);
   };
-
 
   //SHOW ALL DATA
   const showAll = () => {

@@ -9,14 +9,14 @@ const Header = () => {
     setNav(!nav);
   };
   const closeNav = () => {
-    setNav(false)
-  }
+    setNav(false);
+  };
   useEffect(() => {
     const handleResize = () => {
       const innerWidth = window.innerWidth;
       if (innerWidth >= 768) {
         closeNav();
-        return
+        return;
       }
     };
     // Attach event listener on component mount
@@ -40,18 +40,18 @@ const Header = () => {
               <div>
                 <div>
                   <RouterLink to="/" className="text-[#D77FA1]">
-                    Products
+                    Home
                   </RouterLink>
                 </div>
               </div>
               <div>
                 <div>
-                  <a href="">Announcement</a>
+                  <p>Announcement</p>
                 </div>
               </div>
               <div>
                 <div>
-                  <a href="">Support</a>
+                  <p>Support</p>
                 </div>
               </div>
             </div>

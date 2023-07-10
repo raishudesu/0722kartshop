@@ -4,9 +4,7 @@ import { notifyLogin } from "./AdminHeader";
 import { UserAuth } from "../context/AuthContext";
 import { Link as RouterLink } from "react-router-dom";
 
-
 const AdminLogin = () => {
-  
   const { signIn, user } = UserAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,20 +12,19 @@ const AdminLogin = () => {
 
   const handleSignIn = async (e) => {
     e.preventDefault();
-    try{
+    try {
       await signIn(email, password);
       notifyLogin();
-      console.log('user signed in');
-    }
-    catch(error){
+      console.log("user signed in");
+    } catch (error) {
       console.log(error);
     }
-  }
+  };
   useEffect(() => {
-    if(user != null){
-      navigate('/adminmainsection');
+    if (user != null) {
+      navigate("/adminmainsection");
     }
-  }, [user])
+  }, [user]);
   return (
     <div className="w-full h-screen">
       <div className="h-screen flex justify-center items-center">
@@ -65,7 +62,9 @@ const AdminLogin = () => {
               Login
             </button>
           </form>
-          <RouterLink to='/' className="text-sm underline">Go back to main page</RouterLink>
+          <RouterLink to="/" className="text-sm underline">
+            Go back to main page
+          </RouterLink>
         </div>
       </div>
     </div>

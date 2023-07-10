@@ -4,7 +4,7 @@ import { serverTimestamp, doc, updateDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 import DeleteData from "./DeleteData";
 import { notifyUpdate } from "../AdminHeader";
-import { getDownloadURL, ref, listAll, uploadBytes } from "firebase/storage";
+import { ref, uploadBytes } from "firebase/storage";
 import { storage } from "../../firebase";
 import GetImage from "./GetImage";
 import { v4 } from "uuid";

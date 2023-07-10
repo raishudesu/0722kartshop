@@ -23,7 +23,9 @@ const SubNavbar = ({ handleCategoryClick }) => {
             </button>
             <button
               className={`${
-                activeButton === "Bunnies Camp" ? "bg-gray-200 text-[#D77FA1]" : ""
+                activeButton === "Bunnies Camp"
+                  ? "bg-gray-200 text-[#D77FA1]"
+                  : ""
               } p-2 rounded`}
               onClick={() => handleClick("Bunnies Camp")}
             >
@@ -31,24 +33,35 @@ const SubNavbar = ({ handleCategoryClick }) => {
             </button>
             <button
               className={`${
-                activeButton === "Get Up-Weverse, Bunny Beach Bag, NJ x TPG Box, POBs" ? "bg-gray-200 text-[#D77FA1]" : ""
+                activeButton ===
+                "Get Up-Weverse, Bunny Beach Bag, NJ x TPG Box, POBs"
+                  ? "bg-gray-200 text-[#D77FA1]"
+                  : ""
               } p-2 rounded`}
-              onClick={() => handleClick("Get Up-Weverse, Bunny Beach Bag, NJ x TPG Box, POBs")}
+              onClick={() =>
+                handleClick(
+                  "Get Up-Weverse, Bunny Beach Bag, NJ x TPG Box, POBs"
+                )
+              }
             >
               Get Up
             </button>
             <button
               className={`${
-                activeButton === "New Jeans-Weverse and Bluebook" ? "bg-gray-200 text-[#D77FA1]" : ""
+                activeButton === "New Jeans-Weverse and Bluebook"
+                  ? "bg-gray-200 text-[#D77FA1]"
+                  : ""
               } p-2 rounded`}
               onClick={() => handleClick("New Jeans-Weverse and Bluebook")}
             >
               New Jeans
             </button>
-            
+
             <button
               className={`${
-                activeButton === "OMG-Weverse, Message Card and POBs" ? "bg-gray-200 text-[#D77FA1]" : ""
+                activeButton === "OMG-Weverse, Message Card and POBs"
+                  ? "bg-gray-200 text-[#D77FA1]"
+                  : ""
               } p-2 rounded`}
               onClick={() => handleClick("OMG-Weverse, Message Card and POBs")}
             >
@@ -56,13 +69,14 @@ const SubNavbar = ({ handleCategoryClick }) => {
             </button>
             <button
               className={`${
-                activeButton === "Season's Greetings 2023" ? "bg-gray-200 text-[#D77FA1]" : ""
+                activeButton === "Season's Greetings 2023"
+                  ? "bg-gray-200 text-[#D77FA1]"
+                  : ""
               } p-2 rounded`}
               onClick={() => handleClick("Season's Greetings 2023")}
             >
               Season's Greetings 2023
             </button>
-            
           </ul>
         </div>
       </div>
