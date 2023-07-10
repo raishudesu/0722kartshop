@@ -2,12 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { db } from "../../firebase";
 import {
   collection,
-  doc,
-  setDoc,
-  getDocs,
   addDoc,
-  deleteDoc,
-  updateDoc,
   serverTimestamp,
 } from "firebase/firestore";
 import { UserAuth } from "../../context/AuthContext";

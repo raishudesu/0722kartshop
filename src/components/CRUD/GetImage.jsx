@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { getDownloadURL, ref, listAll } from "firebase/storage";
+import { getDownloadURL, ref } from "firebase/storage";
 import { storage } from "../../firebase";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
