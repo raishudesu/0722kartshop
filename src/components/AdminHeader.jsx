@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { UserAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { FiLogOut } from 'react-icons/fi'
 
 const AdminHeader = () => {
   const { user, logOut } = UserAuth();
@@ -38,9 +38,9 @@ const AdminHeader = () => {
   };
   const isSignedIn = () => {
     return (
-      <div className="flex flex-col md:flex-row gap-4">
-        <h1 className="text-center">Welcome {user.email}</h1>
-        <button onClick={handleSignOut}>Logout</button>
+      <div className="flex flex-col md:flex-row md:justify-between w-full items-center gap-4">
+        <h1 className="text-center text-black">Welcome {user.email}</h1>
+        <button onClick={handleSignOut} className="text-white p-2 rounded-lg bg-[#D77FA1]"><FiLogOut size={20} /></button>
       </div>
     );
   };
@@ -70,7 +70,6 @@ const AdminHeader = () => {
             kart.
           </ScrollLink>
           <div className="hidden md:flex justify-between w-[50%]">
-            <RouterLink to="adminmainsection">Admin</RouterLink>
             {user?.email ? isSignedIn() : null}
           </div>
 
@@ -91,7 +90,6 @@ const AdminHeader = () => {
           <h1 className="text-5xl font-bubblegum text-[#D77FA1] p-3 font-semibold">
             kart.
           </h1>
-          <h1>Admin</h1>
           {user?.email ? isSignedIn() : null}
         </div>
       </div>
