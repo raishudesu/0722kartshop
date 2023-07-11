@@ -86,6 +86,7 @@ const AddData = (imageRef) => {
         >
           <option value="">Select status...</option>
           <option value="pre-order">Pre-order</option>
+          <option value="available">Available</option>
           <option value="sold-out">Sold-out</option>
         </select>
         <select

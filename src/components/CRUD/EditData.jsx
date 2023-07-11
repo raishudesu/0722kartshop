@@ -106,6 +106,7 @@ const EditData = () => {
         >
           <option value={updatedStatus}>Update status...</option>
           <option value="pre-order">Pre-order</option>
+          <option value="available">Available</option>
           <option value="sold-out">Sold-out</option>
         </select>
         <select
